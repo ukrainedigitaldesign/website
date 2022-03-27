@@ -2,37 +2,49 @@
 <html>
 <head>
 <title>Ukraine Digital Design | User Interface Design Professionals</title>
-  <link rel="shortcut icon" href="/images/favicon.ico" />
-
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-<div class="header">
-<center>
-<a href="/"><img src="/images/UkraineDigitalDesignLogo-1.png" class="logo"></a>
-<div class="specialtyclassification">User Interface Design Professionals</div>
-</center>
-</div>
-<div class="beginninglinebreak"></div>
-
-<center>
-<span><img src="/images/Standard%20Designer%20Bio.png" class="listing"></span>
-<span><img src="/images/Standard%20Designer%20Bio.png" class="listing"></span>
-</center>
-<div class="footerspacer"></div>
-
-<div class="footer">
-2022 Ukraine Digital Design LLC.
-<center><div class="contactus">Ukraine Digital Design is not a profit-seeking entity. If you have any questions or ideas you want to share with the Ukraine Digital Design Team, feel free to email: <a href="mailto:info@ukrainedigital.org">info@ukrainedigital.org</a></div></center></div>
-<div class="missionlinebreak"></div>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-
+<link rel="shortcut icon" href="/images/favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="description" content="A platform dedicated to connecting Ukrainian Digital Designers impacted by Russia's invasion with high-quality U.S. work opportunities.">
+  <meta name="keywords" content="Ukraine, ukraine, helping ukraine, Russian Invasion, Jack Botein, Botein, Kyiv Web Design, web design, graphic design, logo design, graphics, HTML, CSS, JavaScript">
+  <meta name="author" content="Jack Botein">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style> 
+  @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 body {
   font-family: 'Sora', sans-serif;
   background-color: #005BBB;
   margin:0px;
+}
+
+  .underline {
+  border-bottom: 3px solid #FFFFFF;
+  }
+  
+    ::selection {
+  color: #005BBB;
+  background: #FFD500;
+ }
+ 
+ a {
+    text-decoration: none;
+  }
+  
+ #everythingonwebsite {
+  position: relative;
+  min-height: 100vh;
+}
+
+#cmaincontentminusfooter {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.logo {
+  float: center;
+  width: 80vw;
+  max-width: 450px;
+  margin-left: -40px;
 }
 
 .header {
@@ -44,11 +56,13 @@ body {
   z-index: 99;
 }
 
-.logo {
-  float: center;
-  width: 80vw;
-  max-width: 450px;
-  margin-left: -40px;
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #005BBB;
+  padding: 15px;
+  background-color: white;
 }
 
 .specialtyclassification {
@@ -57,41 +71,6 @@ body {
   color: #005BBB;
 }
 
-.beginninglinebreak {
-  height: 150px;
-}
-  
-  .footer {
-  width: 100%;
-  padding: 10px;
-  background-color: white;
-  color: #005BBB;
-  text-align: center;
-  position: fixed;
-   left: 0;
-   bottom: 0;
-  }
-  
-      .contactus {
-   color: #005BBB;
-   padding-top:8px;
-   padding-bottom:4px;
-   font-size: 12px;
-   width: 80%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .footerspacer {
-    height: 5vh;
-  }
-  
-  ::selection {
-  color: #005BBB;
-  background: #FFD500;
- }
  
 .listing {
   width:85vw;
@@ -107,9 +86,145 @@ body {
  max-width: 850px;
 }
 
+.contactus {
+  color: #005BBB;
+  padding-top:8px;
+  padding-bottom:4px;
+  font-size: 12px;
+  width: 80%;
+}
 
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  position: fixed;
+  top: 0vh;
+  z-index: 99;
+}
 
-</style>
-</body>
+.missionstatement {
+  font-size: 20px;
+  color: white;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.headerlinebreak {
+  height: 130px;
+}
+
+.footerlinebreak {
+  height: 150px;
+}
+
+.missionlinebreak {
+  height: 30px;
+}
+
+.appealimage {
+  width: 75vw;
+  max-width: 400px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #FFD500;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition-duration: 1s;
+  border-radius: 10px;
+}
+
+.appealimage:hover {
+  border-radius: 50px;
+}
+
+button {
+color: #005BBB;
+background-color: white;
+border-color: #FFD500;
+border-radius: .25vw;
+border-style: solid;
+border-width: .375vw;
+font-size: 18px;
+line-height: 30px;
+margin-bottom: 1.5vw;
+margin-right: .75vw;
+margin-left: .75vw;
+transition-duration: 1s;
+  }
+  
+button:hover {
+  background-color: #FFD500;
+}
+
+ .webdesignimg {
+min-width: 70px;
+min-height: 51.5px;
+width: 8.5vw;
+height: 6.5vw;
+background-size:cover;
+background-repeat: no-repeats;
+background-image: url("/images/webdesign.jpeg");
+}
+
+ .graphicimg {
+min-width: 70px;
+min-height: 51.5px;
+width: 8.5vw;
+height: 6.5vw;
+background-size:cover;
+background-repeat: no-repeats;
+background-image: url("/images/graphicdesign.jpeg");
+}
+
+ .codeimg {
+min-width: 70px;
+min-height: 51.5px;
+width: 8.5vw;
+height: 6.5vw;
+background-size:cover;
+background-repeat: no-repeats;
+background-image: url("/images/codefixes.jpg");
+}
+
+ .uxuiimg {
+min-width: 70px;
+min-height: 51.5px;
+width: 8.5vw;
+height: 6.5vw;
+background-size:cover;
+background-repeat: no-repeats;
+background-image: url("/images/uxui.jpg");
+}
+
+ .printdesignimg {
+min-width: 70px;
+min-height: 51.5px;
+width: 8.5vw;
+height: 6.5vw;
+background-size:cover;
+background-repeat: no-repeats;
+background-image: url("/images/printgraphics.jpg");
+}
+
+ </style>
+</head>
+
+<body>
+ <div id="everythingonwebsite">
+   <div id="maincontentminusfooter"><center>
+  
+   <div class="header"><a href="/"><img src="/images/UkraineDigitalDesignLogo-1.png" class="logo"></a><div class="specialtyclassification">User Interface Design Professionals</div></div>
+
+<div class="headerlinebreak"></div>
+
+<span><img src="/images/Standard%20Designer%20Bio.png" class="listing"></span>
+<span><img src="/images/Standard%20Designer%20Bio.png" class="listing"></span>
+
+<div class="footerlinebreak"></div>
+
+   </center></div>
+   <center><footer id="footer">2022 Ukraine Digital Design LLC.<br><div class="contactus">Ukraine Digital Design is not a profit-seeking entity. If you have any questions or ideas you want to share with the Ukraine Digital Design Team, feel free to email: <a href="mailto:info@ukrainedigital.org">info@ukrainedigital.org</a></div></footer></center>
+ </div>
+ </body>
 </html>
-
