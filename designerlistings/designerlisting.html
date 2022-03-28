@@ -1,4 +1,12 @@
 <style>
+body {
+  background-color: transparent;
+}
+
+.wholelisting {
+  background-color: white;
+  width: 500px;
+}
 
 .designername {
   color: #005BBB;
@@ -9,7 +17,7 @@
 }
 
 hr {
-  width: 200px;
+  width: 225px;
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -18,9 +26,16 @@ hr {
   background-color: #005BBB;
 }
 
+br {
+  content: "  ";
+  margin: 2em;
+  display: block;
+  font-size: 50%;
+}
+
 .designerlocation {
   color: #005BBB;
-  font-size: 18px;
+  font-size: 16px;
   padding-top:5px;
   padding-bottom:11px;
   text-align: center;
@@ -32,6 +47,7 @@ hr {
   border-style: solid;
   border-width: 3px;
   border-color: #FFD500;
+  background-color: white;
 }
 
 .mainlisting {
@@ -56,21 +72,18 @@ hr {
   float: right;
 }
 
-button {
+.skill {
   color: #005BBB;
-  border-color: #FFD500;
+  padding-bottom: 2.5px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-bottom: 3px solid transparent;
   font-size: 16px;
-  padding: 7px;
-  margin-left: 4px;
-  margin-right: 4px;
-  border-radius: 10px;
-  transition-duration: 1s;
+  transition-duration: 1.5s;
 }
 
-button:hover {
-  background-color: #FFD500;
-  color: #005BBB;
-  text-decoration: italic;
+.skill:hover {
+  border-bottom: 3px solid #005BBB;
 }
 
 .skillclassification {
@@ -89,27 +102,45 @@ button:hover {
   border-color: #FFD500;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: white;
+}
+
+button {
+  color: #005BBB;
+  border-color: #FFD500;
+  font-size: 16px;
+  padding: 7px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+button:hover {
+  background-color: #FFD500;
+  color: #005BBB;
+  text-decoration: italic;
 }
 
 </style>
-
+<div class="wholelisting">
 <div class="headerlisting">
-<div class="designername">Jack Botein</div>
+<div class="designername"><b>Karyna Budaieva</b></div>
 <hr>
-<div class="designerlocation">Current 📍 Boston</div>
+<div class="designerlocation">Current 📍 Czech Republic</div>
 </div>
 
 <div class="mainlisting">
 <div class="skillsandinfo">
 <center>
-<div class="skillclassification"><i>Skills</i></div>
-<span><button>Business</button></span>
-<span><button>Coding</button></span>
+<br>
+<div class="skillclassification"><i><b>Skills</b></i></div>
+<span class="skill">Graphic Design</span>
 <br><br>
-<div class="skillclassification"><i>Languages</i></div>
-<span><button>English</button></span>
-<span><button>Ukranian</button></span>
-<span><button>Russian</button></span>
+<div class="skillclassification"><i><b>Languages</b></i></div>
+<span class="skill">Ukrainian</span>
+<span class="skill">English (translator)</span>
+<span class="skill">Russian</span>
 </center>
 </div>
 <div class="picture">
@@ -119,7 +150,8 @@ button:hover {
 </div>
 <div class="nextstepslisting">
 <center>
-<span><button>Portfolio</button></span>
-<span><button>Telegram</button></span>
-<span><button>Email</button></span>
-</center>
+<span><a href="https://www.behance.net/karynabudaieva" target="blank"><button>Portfolio</button></a></span>
+<span><a href="https://t.me/mltkary" target="blank"><button>Telegram</button></a></span>
+<span><a href="mailto:artmstrong@gmail.com?subject=Graphic Design Work Inquiry | Ukraine Digital Design"><button>Email</button></a></span>
+</center></div>
+</div>
