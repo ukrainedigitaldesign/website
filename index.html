@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,20 +26,11 @@
 
 body {
   font-family: 'Sora', sans-serif;
-  background-color: #005BBB;
+  background-color: white;
   margin:0px;
   max-width: 100%;
   overflow-x: hidden;
 }
-
-  .underline {
-  border-bottom: 3px solid #FFFFFF;
-  transition-duration: 1s;
-  }
-  
-  .underline:hover {
-    color: silver;
-  }
   
     ::selection {
   color: #005BBB;
@@ -46,8 +39,23 @@ body {
  
  a {
     text-decoration: none;
+    color: black;
   }
   
+  body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFD500;
+  border-radius: 20px;
+  border: 3px solid #FFD500;
+}
+
  #everythingonwebsite {
   position: relative;
   min-height: 100vh;
@@ -77,7 +85,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: #005BBB;
+  color: black;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: white;
@@ -92,15 +100,25 @@ body {
   z-index: 99;
 }
 
-.missionstatement {
+.missionstatementcontainer {
+  border-style: solid;
+  border-width: 3.5px;
+  border-radius: 5px;
+  border-color: #FFD500;
+  box-shadow: 5px 5px 5px #FFD500;
+  width: 70vw;
+}
+
+.missionstatementtext {
   font-size: 20px;
-  color: white;
+  color: black;
   margin-left: 5vw;
-  margin-right: 5vw;
+  margin-right: 4vw;
+  padding: 2vw;
 }
 
 .headerlinebreak {
-  height: 130px;
+  height: 100px;
 }
 
 .footerlinebreak {
@@ -108,37 +126,18 @@ body {
 }
 
 .missionlinebreak {
-  height: 30px;
-}
-
-.appealimage {
-  width: 75vw;
-  max-width: 400px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #FFD500;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  transition-duration: 1s;
-  border-radius: 10px;
-}
-
-.appealimage:hover {
-  border-radius: 50px;
+  height: 50px;
 }
 
 button {
 color: #005BBB;
 background-color: white;
 border-color: #FFD500;
-border-radius: .25vw;
+border-radius: 0px;
 border-style: solid;
-border-width: .375vw;
+border-width: 4px;
 font-size: 18px;
 line-height: 30px;
-margin-bottom: 1.5vw;
-margin-right: .75vw;
-margin-left: .75vw;
 transition-duration: 1s;
   }
   
@@ -147,6 +146,7 @@ button:hover {
 }
 
 .footernavbar {
+  color: black;
   font-size: 10px;
   padding-top: 22px;
   padding-bottom: 23px;
@@ -170,37 +170,65 @@ button:hover {
 .designserviceformblocker {
   height: 120px;
   width: 100vw;
-  background-color: #005BBB;
+  background-color: white;
   position: relative;
   top: -120px;
-  z-index: 99;
+  z-index: 97;
+}
+
+.bigidea {
+  font-size: 35px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.footercopyrighttext {
+  font-size: 15px;
+  color: black;
+}
+
+.channel7interviewcontainer {
+  position: relative;
+  top: -210px;
+  z-index: 98;
+}
+
+.videoiframe {
+  border-style: solid;
+  border-width: 3.5px;
+  border-radius: 5px;
+  border-color: #FFD500;
+  box-shadow: 5px 5px 5px #FFD500;
+  width: 640px;
+  height: 360px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 150%;
 }
 
  </style>
 </head>
 
 <body>
+<center>
  <div id="everythingonwebsite">
-   <div id="maincontentminusfooter"><center>
+   <div id="maincontentminusfooter">
   
-   <div class="header"><a href="/"><img src="/images/UkraineDigitalDesignLogo-1.png" class="logo"></a></div>
+   <div class="header"><a href="/"><img src="https://ukrainedigital.org/images/UkraineDigitalDesignLogo-1.png" class="logo"></a></div>
 
 <div class="headerlinebreak"></div>
 
-<div class="missionstatement">
-Russia's invasion of Ukraine has taken the lives of thousands of innocent civilians, leaving over <span class="underline">3.7 million people as refugees</span> and over <span class="underline">10 million people displaced</span> within Ukraine.
+<div class="bigidea"><b>Hire Ukrainian digital designers impacted by Russia's invasion</b></div>
+
+<div class="missionstatementcontainer">
+<div class="missionstatementtext">
+Russia's invasion of Ukraine has taken the lives of thousands of innocent civilians—leaving over 13.7 million Ukrainians displaced. Without a clear end in sight to the conflict, these displaced Ukrainians are faced with tough economic prospects.
+<br><br>Inspired to help Ukrainians impacted by the war, 11th grade Brookline student Jack Botein had an idea: connect people in the US who need help with technology and digital design with Ukrainians who need work. Ukraine Digital Design isn’t a profit seeking entity, and our fundamental goal is to help Ukrainians through the difficulty of the Russian invasion by providing high-quality digital design jobs in the US—there are no fees or charges whatsoever. 
+<br><br>By hiring a Ukrainian designer for your next tech project—whether it is a new website, code-fix, logo, or custom graphic—you will help them through this difficult wartime period.
 </div>
-
-<img src="/images/pexels-%D0%B0%D0%BB%D0%B5%D1%81%D1%8C-%D1%83%D1%81%D1%86%D1%96%D0%BD%D0%B0%D1%9E-11477792.jpg" class="appealimage">
-
-<div class="missionstatement">
-Our mission at Ukraine Digital Design is to provide temporary tech gigs to Ukrainians in-need. These jobs provide an economic lifeline in a time of crisis for millions of Ukrainians.
-</div>
-
-<div class="missionlinebreak"></div>
-
-<div class="missionstatement">
-A key thing to know: Ukrainian people are geniuses at tech. By hiring a designer on our platform, you'll get expert help on your project & provide much needed financial help to struggling Ukrainians.
 </div>
 
 <div class="missionlinebreak"></div>
@@ -208,20 +236,31 @@ A key thing to know: Ukrainian people are geniuses at tech. By hiring a designer
 <div class="missionstatement" style="font-size: 22px;margin-bottom: 10px;">
 Find the perfect Ukrainian Digital Designer for your organization</div>
 
-<center><iframe src="https://www.cognitoforms.com/f/LypZd4A38023ZhSPVld8zQ/1" style="border:0;width:100%;" height="303"></iframe>
+<iframe src="https://www.cognitoforms.com/f/LypZd4A38023ZhSPVld8zQ/1" style="border:0;width:100%;" height="303"></iframe>
 <script src="https://www.cognitoforms.com/f/iframe.js"></script>
-<div class="designserviceformblocker"></div></center>
+<div class="designserviceformblocker"></div>
 
 <div class="footerlinebreak"></div>
 
-   </center></div>
-   <center><footer id="footer">2022 Ukraine Digital Design LLC.
+<div class="channel7interviewcontainer">
+<h2>Ukraine Digital Design press: 7News Boston</h2>
+<iframe class="videoiframe" src="https://player.vimeo.com/video/711328588?h=da6096fe86&autoplay=1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><br>
+<button>
+<a href="https://whdh.com/news/local-high-school-student-launches-digital-platform-to-connect-ukrainians-with-remote-work/" target="blank">read more</a>
+</button>
+</div>
+
+
+   </div> <! –– closes out section that's everything but footer ––>
+   
+   
+   <footer id="footer">
+   <div class="footercopyrighttext">2022 Ukraine Digital Design LLC.</div>
    <div class="footernavbar">
-   <a href="/about" target="blank"><span class='footernavitem'>About</span></a>
-   <a href="/designerregistration" target="blank"><span class='footernavitem'>Register as a Designer</span></a>
-   <a href="/contact" target="blank"><span class="footernavitem">Contact</span></a>
+   <a href="/contact" target="blank"><span class="footernavitem">Contact Us</span></a>
    </div>
-   </footer></center>
+   </footer>
  </div>
+ </center>
  </body>
 </html>
